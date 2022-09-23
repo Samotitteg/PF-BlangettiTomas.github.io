@@ -9,11 +9,20 @@
     
 }
 
-.imagen-resto img {
-    width: 700px;
-    height: auto;    
-    
+@media (min-width: 625px) {
+    .imagen-resto img {
+        width: 30rem;
+        height: auto;
+    }     
 }
+@media (max-width: 625px) {
+    .imagen-resto img {
+        width: 100%;
+        height: auto;
+    }     
+}
+
+
 .imagen-resto h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
@@ -25,6 +34,7 @@
     align-items: center;
     grid-template-columns: 1fr 1fr;
     height: 300px;
+    background-image: linear-gradient(to bottom,rgb(201, 227, 250), aqua );
 
 }
 .menugral a {
@@ -33,12 +43,76 @@
 
 .tit {
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(100, 177, 177);
 }
-.menues {
-    display: grid;
-    grid-template-rows: 1fr 4fr 1fr 4fr;
+
+.menu-sub {
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-left: 1rem;
+    text-decoration: overline;
 }
+.ini {
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;  
+}
+
+@media (min-width: 625px) {
+    .menues {
+        display: grid;
+        grid-template-rows: 1fr 800px 1fr 800px;
+    }
+    .menu-sub-a {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;    
+        background-image: linear-gradient(to left, rgb(176, 249, 161), rgb(126, 130, 128));
+    }
+}
+@media (max-width: 625px) {
+    .menues {
+        display: grid;
+        grid-template-rows: 1fr 1600px 1fr 1600px;
+    }
+    .menu-sub-a {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;    
+        background-image: linear-gradient(to left, rgb(176, 249, 161), rgb(126, 130, 128));
+    }
+}
+
+/*animacion*/
+
+.muestra {
+    transition: all 0.5s;         
+ }
+ .muestra .detallemenu {
+    transition: all 0.5s; 
+    display: none;
+ }
+ 
+ .muestra:hover {
+    height: 500px; width: 500px;       
+    padding: 20px;
+    background-color: rgb(222, 238, 238);
+}
+.muestra:hover .detallemenu {
+    display: block;
+ }
+ 
+
+ 
+
+
 
 
 
