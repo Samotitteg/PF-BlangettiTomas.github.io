@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.imagen-resto {
+    text-align: center;background-color: rgb(201, 227, 250);
+    
+}
+
+.imagen-resto img {
+    width: 700px;
+    height: auto;    
+    
+}
+.imagen-resto h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+.restocomida {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+
+}
+.menugral a {
+    text-decoration: none;
+}
+
+.tit {
+    text-align: center;
+    background-color: aqua;
+}
+.menues {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr 4fr;
+}
+
+
+
+
+
+
+
+
+
