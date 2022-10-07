@@ -1,0 +1,18 @@
+.selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    height: 80px;
+    width: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(134, 135, 136);
+          
+}
+.seleccion option{
+   color: red
+}
+.seleccion form {
+    border-radius: 2rem;  
+}

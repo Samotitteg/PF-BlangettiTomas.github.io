@@ -1,0 +1,55 @@
+.container-fluid {
+    background-image: linear-gradient(to right,rgb(156, 157, 130),rgb(156, 160, 41));
+    padding: 0.6rem;
+    border-bottom: solid 0.3rem black;
+    margin-bottom: 0.12rem;
+    text-align: center; 
+}
+.navbar-brand {
+    img {
+    width: 60px;
+    height: auto;
+    border: solid 1px blue; 
+    }     
+}
+
+.nav-item {
+    a {
+    text-decoration: none;
+    color: rgb(138, 14, 14);
+    font-weight: bold;
+        &.hover {
+            color: rgb(21, 170, 26);
+        } 
+    }     
+}
+
+.login {
+    img {
+    width: 50px;
+    height: auto;
+    border: solid 1px red;
+    display: none;
+    }
+}
+.help {
+    img{
+    width: 50px;
+    height: auto;
+    border: solid 1px blue;
+    display: none;
+    }
+}
+@media (min-width: 990px) {
+    .login {
+        img {
+        display: block;
+        }
+    }
+    .help {
+        img {
+        display: block;
+        }
+
+    }
+}

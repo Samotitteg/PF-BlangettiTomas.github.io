@@ -1,112 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
-}
-
-.container-fluid {
-    background-image: linear-gradient(to right,rgb(156, 157, 130),rgb(156, 160, 41));
-    padding: 0.6rem;
-    border-bottom: solid 0.3rem black;
-    margin-bottom: 0.12rem;
-    text-align: center; 
-}
-
-.navbar-brand img {
-    width: 60px;
-    height: auto;
-    border: solid 1px blue;      
-}
-.nav-item a {
-    text-decoration: none;
-    color: rgb(138, 14, 14);
-    font-weight: bold;     
-}
-.nav-item a:hover {
-    color: rgb(21, 170, 26);
-} 
-
-.login img {
-    width: 50px;
-    height: auto;
-    border: solid 1px red;
-}
-.help img{
-    width: 50px;
-    height: auto;
-    border: solid 1px blue;
-
-/*desaparecen logos ayuda y login al aparecer toggler*/
-}
-.login img {
-    display: none;
-}
-.help img {
-    display: none;
-}
-@media (min-width: 990px) {
-    .login img {
-        display: block;
-    }
-    .help img {
-        display: block;
-
-    }
-
-}
-
- 
-
-
-
-/*main*/
-
-
-.principal {
-    background-image: radial-gradient(rgb(244, 236, 236),rgb(142, 35, 35)) ;
-    text-align: center;
-    margin-bottom: 0.3rem;
-    padding: 0.6rem;    
-    
-}
-.logoprinci {
-    width: 30%;
-    height: auto;    
-}
-
-.titulo {
-    font-weight: bold;
-    font-size: 50px;       
-}
-
- 
-
-.capital {
-    font-family: 'Times New Roman', Times, serif;    
-}
-.detalle {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    color: rgb(58, 58, 92);
-}
-.detalle {
-    display: none;
-}
 @media (max-width: 576px) {
     .titulo {
         font-size: 20px;
     }
-}
-
-@media (min-width: 576px) { 
     .detalle {
         display: block;
     }
 }
-
-
-
-/*segundo cuerpo*/
 /*mayor a 1270px*/
 
 @media (min-width: 1270px) {   
@@ -127,12 +26,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
         margin: 0.6rem;
+        .cinei {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .cine .cinei a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
+    
     
     
     .food {
@@ -144,12 +48,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.6rem;
+        .foodi {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .food .foodi a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
+    
     
     
     .entre {
@@ -161,12 +70,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.6rem;
+        .entrei {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .entre .entrei a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
+    
     
     
     .cont {
@@ -178,15 +92,19 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.6rem;
+        .conti {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .cont .conti a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
-
-/*entre 1270px y 670px*/
 }
+/*entre 1270px y 670px*/
+
 @media (max-width: 1270px) and (min-width: 670px) {   
 
     .contenedor {
@@ -205,13 +123,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
         margin: 0.6rem;
+        .cinei {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .cine .cinei a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
-    
+        
     
     .food {
         background-color: rgb(235, 146, 174);
@@ -222,13 +144,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.6rem;
+        .foodi {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .food .foodi a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
-    
+        
     
     .entre {
         background-color: rgb(131, 184, 114);
@@ -239,13 +165,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.6rem;
+        .entrei {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .entre .entrei a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
-    
+       
     
     .cont {
         background-color: rgb(248, 145, 248);
@@ -256,15 +186,19 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.6rem;
+        .conti {
+            a {
+                img {
+                    width: 12rem;
+                    height: auto;
+                    border: solid 0.12rem black;
+                }
+            }
+        }
     }
-    .cont .conti a img {
-        width: 12rem;
-        height: auto;
-        border: solid 0.12rem black;
-    }
-
-/*menor a 670px*/
 }
+/*menor a 670px*/
+
 @media (max-width: 670px) and (min-width: 150px) {   
 
     .contenedor {
@@ -283,13 +217,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
         margin: 0.3rem;
+        .cinei {
+            a {
+                img {
+                    width: 6rem;
+                    height: auto;
+                    border: solid 0.06rem black;
+                }
+            }
+        }
     }
-    .cine .cinei a img {
-        width: 6rem;
-        height: auto;
-        border: solid 0.06rem black;
-    }
-    
+        
     
     .food {
         background-color: rgb(235, 146, 174);
@@ -300,13 +238,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.3rem;
+        .foodi {
+            a {
+                img {
+                    width: 6rem;
+                    height: auto;
+                    border: solid 0.06rem black;
+                }
+            }
+        }
     }
-    .food .foodi a img {
-        width: 6rem;
-        height: auto;
-        border: solid 0.06rem black;
-    }
-    
+        
     
     .entre {
         background-color: rgb(131, 184, 114);
@@ -317,13 +259,17 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.3rem;
+        .entrei {
+            a {
+                img {
+                    width: 6rem;
+                    height: auto;
+                    border: solid 0.06rem black;
+                }
+            }
+        }
     }
-    .entre .entrei a img {
-        width: 6rem;
-        height: auto;
-        border: solid 0.06rem black;
-    }
-    
+        
     
     .cont {
         background-color: rgb(248, 145, 248);
@@ -334,49 +280,56 @@
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
         margin: 0.3rem;
-    }
-    .cont .conti a img {
-        width: 6rem;
+        .conti {
+            a {
+                img {
+                    width: 6rem;
+                    height: auto;
+                    border: solid 0.06rem black;
+                }
+            }
+        }
+    }       
+}
+
+@media (min-width: 625px) {
+    .imagen-resto img {
+        width: 30rem;
         height: auto;
-        border: solid 0.06rem black;
     }
-    
+    .menues {
+        display: grid;
+        grid-template-rows: 1fr 800px 1fr 800px;
+    }
+    .menu-sub-a {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;    
+        background-image: linear-gradient(to left, rgb(176, 249, 161), rgb(126, 130, 128));
+    }     
+}
+@media (max-width: 625px) {
+    .imagen-resto img {
+        width: 100%;
+        height: auto;
+    } 
+    .menues {
+        display: grid;
+        grid-template-rows: 1fr 1600px 1fr 1600px;
+    }
+    .menu-sub-a {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;    
+        background-image: linear-gradient(to left, rgb(176, 249, 161), rgb(126, 130, 128));
+    }
+        
 }
 
-.texto-tarjeta a {
-    text-decoration: none;
-    color: rgb(17, 15, 15);
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 
 
-
-/*propaganda flotante*/
-
-.aside {
-    background-image: linear-gradient(to left, rgb(216, 216, 231), rgb(40, 40, 237));
-    padding: 0.3rem;
-    border: solid 0.12rem black;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 1rem;  
-}
-
-/*pie de pagina*/
-
-.foot {
-    font-weight: bold;
-    margin: 0.6rem;
-    text-align: center;
-    background-image: radial-gradient(rgb(186, 32, 32),rgb(149, 137, 137)) ;
-
-}
-.foot a {
-    text-decoration: none;
-    color: red;
-}
-
- 

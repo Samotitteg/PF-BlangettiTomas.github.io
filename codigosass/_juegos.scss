@@ -1,0 +1,20 @@
+.row {
+    height: 350px;
+    padding: 2rem;
+    margin: 2rem;
+    background-image: linear-gradient(to left, rgb(216, 216, 231), rgb(40, 40, 237));
+}
+ 
+.col {
+    border: solid 2px;
+    padding: 30px
+}
+
+.reserva {
+    h1 {
+        color: blue;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
