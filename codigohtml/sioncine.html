@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sion un lugar donde la diversion y el buen comer estan asegurados">
     <meta name="keywords"  content="COMIDA, CINE, JUEGOS, DIVERSION, PLACER, BUEN GUSTO, PELICULAS, RISAS">
-    <link rel="shortcut icon" href="../imagenes/logosion.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../imagenes/logoprincipal.png" type="image/x-icon">
     <title>SION CITY</title>
     <link rel="stylesheet" href="../codigosass/sionsass.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    
@@ -15,11 +15,11 @@
 
   <body>
 
-    <header id="inicio"><!--bootstrap ajustado a mi pagina-->
+    <header id="inicio" class="up2"><!--bootstrap ajustado a mi pagina-->
             
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src="../imagenes/logosion.jpg" alt="LOGO"></a>
+          <a class="navbar-brand"><img src="../imagenes/logoprincipal.png" alt="LOGO"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,12 +54,29 @@
     </header>
 
     <main>
-      <div class="imagen-resto">
-        <iframe width="600" height="300" src="https://www.youtube.com/embed/vKKu-Wt7O2Q" 
-        title="Thor: Amor y Trueno de Marvel Studios | Teaser Oficial | Doblado" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>       
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://www.youtube.com/embed/vKKu-Wt7O2Q" target="_blank"><img src="../imagenes/love and thunder.jpeg" class="d-block w-100" alt="video love and thunder"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.youtube.com/embed/w7DR3JghQTg" target="_blank"><img src="../imagenes/Top Gun 2.jpg" class="d-block w-100" alt="video top gun maverick"></a>            
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.youtube.com/embed/wv7L4Sokn-w" target="_blank"><img src="../imagenes/asesino sin memoria.jpg" class="d-block w-100" alt="video asesino sin memoria"></a>                     
+          </div>
+          <div class="proximos">NUESTROS PROXIMOS ESTRENOS</div>  
+          <div class="play"><h2>Toca para ver trailer</h2></div> 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>              
     </main>
 
     <section class="selection">
@@ -67,11 +84,12 @@
         <form action="" method="" enctype="">
           <select name="" id="">
             <option value="">ELIGE PELICULA</option>
-            <option value="">PELICULA 1</option>
-            <option value="">PELICULA 2</option>
-            <option value="">PELICULA 3</option>
-            <option value="">PELICULA 4</option>
-            <option value="">PELICULA 5</option>
+            <option value="">Argentina 1985</option>
+            <option value="">Black Adam</option>
+            <option value="">El exorcismo de Dios</option>
+            <option value="">La Huerfana</option>
+            <option value="">Jack en la caja maldita</option>
+            <option value="">Halloween</option>
           </select>
         </form> 
       </div>
@@ -88,61 +106,174 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <h3>PELICULAS EN PROYECCION</h3>        
+    <div class="pelitit">
+      <h3>PELICULAS EN PROYECCION</h3>        
+    </div>
+
+    <section class="proyeccion">
+      
+      <div class="peli">
+        <img src="../imagenes/1985.jpg" alt="imagen pelicula 1">
+        <h5>Argentina 1985</h5>
+        <div class="resumen">
+          <p>RESUMEN</p>
+          <P>Argentina, 1985 está inspirada en la historia real de Julio Strassera, Luis Moreno Ocampo y su joven equipo jurídico que se atrevieron a acusar, contra viento y marea, a contrarreloj y bajo constante amenaza, a la más sangrienta dictadura militar argentina. Una batalla de David contra Goliat, con los héroes menos esperados</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/peli1.jpg" alt="imagen pelicula 1">
-        <h5>nombre pelicula 1</h5>
+      <div class="peli">  
+        <img src="../imagenes/black adam.jpg" alt="imagen pelicula 2">
+        <h5>Black Adam</h5>
+        <div class="resumen">
+          <p>RESUMEN</p>
+          <P>De la mano de New Line Cinema, Dwayne Johnson protagoniza la aventura de acción Black Adam. La primera película que explora la historia de este superhéroe de DC llega a la pantalla grande bajo la dirección de Jaume Collet-Serra (Jungle Cruise). Casi 5,000 años después de obtener los poderes supremos de los antiguos dioses –y de ser encarcelado igual de rápido–, Black Adam (Johnson) se libera de su tumba terrenal, listo para desatar su peculiar forma de justicia en el mundo moderno</P>
+        </div>
       </div>
-      <div>    
-        <img src="../imagenes/peli2.jpg" alt="imagen pelicula 2">
-        <h5>nombre pelicula 2</h5>
+      <div class="peli">
+        <img src="../imagenes/exorcismo de dios.jpg" alt="imagen pelicula 3">
+        <h5>El Exorcismo de Dios</h5>
+        <div class="resumen">
+          <p>RESUMEN</p>
+          <P>El padre Peter Williams, un exorcista estadounidense, es poseído por el demonio que intentaba expulsar de una joven y por el que se ve obligado, contra su voluntad, a cometer el más terrible sacrilegio.</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/peli3.jpg" alt="imagen pelicula 3">
-        <h5>nombre pelicula 3</h5>
+      <div class="peli">
+        <img src="../imagenes/la huerfana.png" alt="imagen pelicula 4">
+        <h5>La Huerfana</h5>
+        <div class="resumen">
+          <p>RESUMEN</p>
+          <P>Devastada por la perdida del bebé que estaban esperando, Kate y su marido deciden adoptar a una niña en el orfanato local. Sin embargo, al poco tiempo de tener a la pequeña en casa, la niña no parece ser tan inocente como Kate cree.</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/peli4.jpg" alt="imagen pelicula 4">
-        <h5>nombre pelicula 4</h5>
-      </div>
-      <div>
-        <img src="../imagenes/peli5.jpg" alt="imagen pelicula 5">
-        <h5>nombre pelicula 5</h5>
+      <div class="peli">
+        <img src="../imagenes/jack.jpg" alt="imagen pelicula 5">
+        <h5>Jack en la Caja Maldita</h5>
+        <div class="resumen">
+          <p>RESUMEN</p>
+          <P>Los amigos de Casey empiezan a morir desde que llegó al museo una antigua caja con un muñeco dentro. Casey empieza a sospechar que este espeluznante juguete tiene vida propia y es el culpable de los horrores que se están sucediendo.</P>
+        </div>
+      </div>  
+      <div class="peli">
+        <img src="../imagenes/halloween.jpg" alt="imagen pelicula 6">
+        <h5>Halloween La Noche Final</h5>
+        <div class="resumen">
+          <p>RESUMEN</p>
+          <P>Después de 45 años, la franquicia de terror más aplaudida de la historia del cine llega a un aterrador y épico final cuando Laurie Strode se enfrenta por última vez a la encarnación del mal, Michael Myers, en una confrontación decisiva que nada tiene que ver con lo que se ha visto hasta ahora en la saga. Aunque esta vez solo uno de los dos sobrevivirá.</P>
+        </div>
       </div>  
     </section>
+    <div class="estrenostit">
+      <h3>PROXIMOS ESTRENOS</h3>        
+    </div>
 
-    <section>
-      <div>
-        <h3>PROXIMOS ESTRENOS</h3>        
+    <section class="estrenos">
+      
+      <div class="estrenopeli">
+        <img src="../imagenes/asesino sin memoria.jpg" alt="imagen estreno 1">
+        <h5>Asesino sin Memoria</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Un asesino a sueldo descubre que se ha convertido en un objetivo después de que se niega a completar un trabajo para una peligrosa organización criminal.</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/estre1.jpg" alt="imagen estreno 1">
-        <h5>nombre pelicula 1</h5>
+      <div class="estrenopeli">
+        <img src="../imagenes/love and thunder.jpeg" alt="imagen estreno 2">
+        <h5>THOR Love and Thunder</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Secuela de "Thor: Ragnarok" en la que el Dios del Trueno contará con Lady Thor como acompañante.</P>
+        </div>
       </div>
-      <div>    
-        <img src="../imagenes/estre2.jpg" alt="imagen estreno 2">
-        <h5>nombre pelicula 2</h5>
+      <div class="estrenopeli">
+        <img src="../imagenes/Top Gun 2.jpg" alt="imagen estreno 3">
+        <h5>TOP GUN Maverick</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Tras más de 30 años de servicio como uno de los mejores aviadores de la Armada, Pete "Maverick" Mitchel se encuentra dónde siempre quiso estar, empujando los límites como un valiente piloto de prueba.</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/estre3.jpg" alt="imagen estreno 3">
-        <h5>nombre pelicula 3</h5>
+      <div class="estrenopeli">
+        <img src="../imagenes/luz.jpg" alt="imagen estreno 4">
+        <h5>La Luz del Diablo</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Según informes reales del Vaticano, los casos de posesión demoníaca han aumentado significativamente en los últimos años. En respuesta, la iglesia católica ha reabierto en secreto escuelas de exorcismo para capacitar a los sacerdotes en este rito sagrado.</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/estre4.jpg" alt="imagen estreno 4">
-        <h5>nombre pelicula 4</h5>
+      <div class="estrenopeli">
+        <img src="../imagenes/wakanda.jpg" alt="imagen estreno 5">
+        <h5>Wakanda For Ever</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Una secuela que seguirá explorando el incomparable mundo de Wakanda y todos los ricos y variados personajes presentados en la película de 2018.</P>
+        </div>
       </div>
-      <div>
-        <img src="../imagenes/estre5.jpg" alt="imagen estreno 5">
-        <h5>nombre pelicula 5</h5>
-      </div>  
+      <div class="estrenopeli">
+        <img src="../imagenes/scream.jpg" alt="imagen estreno 6">
+        <h5>Scream 2022</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>25 años después de que una racha de asesinatos brutales conmocionara a la tranquila ciudad de Woodsboro, un nuevo asesino imitador se ha puesto la máscara de Ghostface para resucitar secretos del pasado.</P>
+        </div>
+      </div>
+      <div class="estrenopeli">
+        <img src="../imagenes/avatar.jpeg" alt="imagen estreno 7">
+        <h5>Avatar El reino del Agua</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece.</P>
+        </div>
+      </div>
+      <div class="estrenopeli">
+        <img src="../imagenes/sonrie.jpg" alt="imagen estreno 8">
+        <h5>Sonrie</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Después de ser testigo de un extraño y traumático accidente que involucró a una paciente, la Dr. Rose Cotter (Sosie Bacon) empieza a experimentar sucesos aterradores que no puede explicarse. A medida que el terror comienza a apoderarse de su vida, Rose debe enfrentarse a su pasado para sobrevivir y escapar de su horrible nueva realidad.</P>
+        </div>
+      </div>
+      <div class="estrenopeli">
+        <img src="../imagenes/telefono negro.jpeg" alt="imagen estreno 9">
+        <h5>El Telefono Negro</h5>
+        <div class="resumen2">
+          <p>RESUMEN</p>
+          <P>Un homicida sádico y enmascarado mantiene a Finney, un niño de 13 años, secuestrado en un sótano incomunicado. A través de un teléfono averiado que hay en la pared, Finney se comunica con otras víctimas del criminal, quienes quieren ayudarlo.</P>
+        </div>
+      </div>
+      
     </section>
 
-    <footer id="foot">
-      <p>&copy COPYRIGHT 2022</p>
-      <a href="#inicio"><p>VOLVER ARRIBA</p></a>
+    <footer class="footc">
+      <div class="copyc">
+        <p>&copy COPYRIGHT 2022. Todos Los Derechos Reservados</p>
+      </div>
+      <div class="paisc">
+        <p>ARGENTINA/ESPAÑOL</p>
+      </div>
+      
+      <div class="privacidadc">
+        <p>PRIVACIDAD</p>
+      </div>
+      <div class="cookiesc">
+        <p>COOKIES</p>
+      </div>
+      <div class="legalesc">
+        <p>LEGALES</p>
+      </div>
+      
+      <div class="redc">
+        <p>MANTENTE INFORMADO!!</p>
+      </div>
+      <div class="footerboxc">
+        <div class="redesc">
+          <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank"><img src="../imagenes/facebook.png" alt="facebook"></a>
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" target="_blank"><img src="../imagenes/twitter.png" alt="twitter"></a>          
+          <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.png" alt="instagram"></a>
+        </div>
+      </div>
+      
+      <div class="volverc">
+        <a href="#inicio"><p>VOLVER ARRIBA</p></a>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

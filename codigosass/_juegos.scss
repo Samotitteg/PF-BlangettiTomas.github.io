@@ -1,20 +1,55 @@
-.row {
+#game .row {
     height: 350px;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 0.5rem 1rem 1rem 2rem;
+    margin-top: 5px;
+    margin-bottom: 2rem;
     background-image: linear-gradient(to left, rgb(216, 216, 231), rgb(40, 40, 237));
 }
  
-.col {
+#game .row .col {
     border: solid 2px;
-    padding: 30px
+    padding: 5px
+}
+.patio {
+    background-color: rgb(118, 227, 184);
 }
 
 .reserva {
+    a{
+      text-decoration: none;
+      
+    }
     h1 {
-        color: blue;
+        color: rgb(133, 11, 52);
         font-family: cursive;
         font-weight: bold;
         font-size: 3rem;
+        padding-bottom: 20px;
+        text-shadow: 5px 5px 0 rgb(215, 236, 184);
+        &:hover {
+            transform: translateY(-8%);
+        }  
     }
 }
+.up4 .collapse {
+    ul li a {
+        text-decoration: none;
+        color: rgb(241, 245, 185);
+        font-weight: bold;
+        &:hover {
+            color: rgb(47, 5, 153);
+        } 
+    }     
+}
+#entertainment {
+    background-color: rgb(73, 121, 102);
+    color: rgb(241, 245, 185);
+}
+.inienter {
+    color: rgb(241, 245, 185);
+}
+.imgjuegos {
+    width: 90%;
+    height: 200px;
+}
+

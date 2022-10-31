@@ -1,61 +1,122 @@
 .principal {
-    background-image: radial-gradient(rgb(244, 236, 236),rgb(142, 35, 35)) ;
+    background-image: url(../imagenes/fotosion.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     text-align: center;
     margin-bottom: 0.3rem;
     padding: 0.6rem;    
     
 }
-.logoprinci {
-    width: 30%;
-    height: auto;    
-}
 
-.titulo {
-    font-weight: bold;
-    font-size: 50px;       
-}
-.capital {
-    font-family: 'Times New Roman', Times, serif;    
-}
-.detalle {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    color: rgb(58, 58, 92);
-    display: none;
-}
 .texto-tarjeta {
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     a {
         text-decoration: none;
-        color: rgb(17, 15, 15);
-        font-weight: bold;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        &:hover {
+            color: yellow;
+        }
+        
     }
-}
-/*propaganda flotante*/
-
-.aside {
-    background-image: linear-gradient(to left, rgb(216, 216, 231), rgb(40, 40, 237));
-    padding: 0.3rem;
-    border: solid 0.12rem black;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 1rem;  
 }
 
 /*pie de pagina*/
 
-.foot {
-    font-weight: bold;
-    margin: 0.6rem;
-    text-align: center;
-    background-image: radial-gradient(rgb(186, 32, 32),rgb(149, 137, 137)) ;
-    a {
-        text-decoration: none;
-        color: red;
-    }
-
+.copy {
+    justify-self: 20%;
+    grid-area: copi;
 }
+.pais {
+    grid-area: pais;
+}
+.privacidad {
+    grid-area: privacidad;
+}
+.cookies {
+    grid-area: cook;
+}
+.legales {
+    grid-area: leg;
+}
+.red {
+    justify-self: right;
+    grid-area: rede;
+}
+.footerbox {
+    justify-self: center;
+    grid-area: footerbox;
+}
+.volver {
+    justify-self: left;
+    grid-area: volver;
+    
+}
+
+
+
+.foot {
+    display: grid;
+    padding: 20px;       
+    font-weight: bold; 
+    color: rgb(234, 245, 88);   
+    background-image: radial-gradient(rgb(73, 71, 213),rgb(4, 11, 84));
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas: 
+     "copi copi copi copi copi"
+     "pais pais privacidad cook leg"
+     "volver volver rede rede footerbox";     
+    
+}
+.volver {
+    a {
+        color: rgb(234, 245, 88);
+        text-decoration: none;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.redes img {
+    width: 2rem;
+    height: 2rem;
+}
+.info {
+    text-align: center;
+}
+
+
+/*contacto*/
+
+
+#contact {
+    background-color: rgb(173, 93, 166);
+    color: rgb(241, 245, 185);
+}
+.cuerpocontacto {
+    background-color: rgb(241, 225, 240);
+    .info {
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 20px;
+        text-shadow: 1px 3px 0 rgb(171, 171, 172);
+    }
+}
+.comentarios {
+    margin: 4rem 2rem 5px 2rem;
+    padding: 2rem;
+    border-color: rgb(173, 93, 166);
+    border-style: dashed;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+}
+
+
+
 
 
 

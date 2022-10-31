@@ -4,11 +4,40 @@
   box-sizing: border-box;
 }
 
-.container-fluid {
-  background-image: linear-gradient(to right, rgb(156, 157, 130), rgb(156, 160, 41));
+.up1 .container-fluid {
+  background-image: linear-gradient(to right, rgb(73, 71, 213), rgb(4, 11, 84));
   padding: 0.6rem;
   border-bottom: solid 0.3rem black;
   margin-bottom: 0.12rem;
+  text-align: center;
+}
+
+.up2 .container-fluid {
+  background-color: rgb(66, 59, 59);
+  padding: 0.6rem;
+  border-bottom: solid 0.3rem black;
+  margin-bottom: 0.12rem;
+  text-align: center;
+}
+
+.up3 .container-fluid {
+  background-color: rgb(201, 227, 250);
+  padding: 0.6rem;
+  border-bottom: solid 0.3rem black;
+  text-align: center;
+}
+
+.up4 .container-fluid {
+  background-color: rgb(118, 227, 184);
+  padding: 0.6rem;
+  border-bottom: solid 0.3rem black;
+  text-align: center;
+}
+
+.up5 .container-fluid {
+  background-color: rgb(145, 72, 139);
+  padding: 0.6rem;
+  border-bottom: solid 0.3rem black;
   text-align: center;
 }
 
@@ -16,21 +45,23 @@
   width: 60px;
   height: auto;
   border: solid 1px blue;
+  border-radius: 30%;
 }
 
-.nav-item a {
+.collapse ul li a {
   text-decoration: none;
-  color: rgb(138, 14, 14);
+  color: rgb(234, 245, 88);
   font-weight: bold;
 }
-.nav-item a.hover {
-  color: rgb(21, 170, 26);
+.collapse ul li a:hover {
+  color: rgb(67, 228, 72);
 }
 
 .login img {
   width: 50px;
   height: auto;
-  border: solid 1px red;
+  border: solid 1px black;
+  border-radius: 50%;
   display: none;
 }
 
@@ -38,6 +69,7 @@
   width: 50px;
   height: auto;
   border: solid 1px blue;
+  border-radius: 50%;
   display: none;
 }
 
@@ -50,82 +82,189 @@
   }
 }
 .principal {
-  background-image: radial-gradient(rgb(244, 236, 236), rgb(142, 35, 35));
+  background-image: url(../imagenes/fotosion.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   margin-bottom: 0.3rem;
   padding: 0.6rem;
 }
 
-.logoprinci {
-  width: 30%;
-  height: auto;
-}
-
-.titulo {
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.capital {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.detalle {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 15px;
-  color: rgb(58, 58, 92);
-  display: none;
-}
-
-.texto-tarjeta a {
-  text-decoration: none;
-  color: rgb(17, 15, 15);
+.texto-tarjeta {
+  color: black;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-/*propaganda flotante*/
-.aside {
-  background-image: linear-gradient(to left, rgb(216, 216, 231), rgb(40, 40, 237));
-  padding: 0.3rem;
-  border: solid 0.12rem black;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin: 1rem;
+.texto-tarjeta a {
+  text-decoration: none;
+  color: black;
+}
+.texto-tarjeta a:hover {
+  color: yellow;
 }
 
 /*pie de pagina*/
-.foot {
-  font-weight: bold;
-  margin: 0.6rem;
-  text-align: center;
-  background-image: radial-gradient(rgb(186, 32, 32), rgb(149, 137, 137));
+.copy {
+  justify-self: 20%;
+  grid-area: copi;
 }
-.foot a {
+
+.pais {
+  grid-area: pais;
+}
+
+.privacidad {
+  grid-area: privacidad;
+}
+
+.cookies {
+  grid-area: cook;
+}
+
+.legales {
+  grid-area: leg;
+}
+
+.red {
+  justify-self: right;
+  grid-area: rede;
+}
+
+.footerbox {
+  justify-self: center;
+  grid-area: footerbox;
+}
+
+.volver {
+  justify-self: left;
+  grid-area: volver;
+}
+
+.foot {
+  display: grid;
+  padding: 20px;
+  font-weight: bold;
+  color: rgb(234, 245, 88);
+  background-image: radial-gradient(rgb(73, 71, 213), rgb(4, 11, 84));
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "copi copi copi copi copi" "pais pais privacidad cook leg" "volver volver rede rede footerbox";
+}
+
+.volver a {
+  color: rgb(234, 245, 88);
   text-decoration: none;
+}
+.volver a:hover {
   color: red;
 }
 
-@media (max-width: 576px) {
-  .titulo {
-    font-size: 20px;
-  }
-  .detalle {
-    display: block;
-  }
+.redes img {
+  width: 2rem;
+  height: 2rem;
 }
+
+.info {
+  text-align: center;
+}
+
+/*contacto*/
+#contact {
+  background-color: rgb(173, 93, 166);
+  color: rgb(241, 245, 185);
+}
+
+.cuerpocontacto {
+  background-color: rgb(241, 225, 240);
+}
+.cuerpocontacto .info {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 20px;
+  text-shadow: 1px 3px 0 rgb(171, 171, 172);
+}
+
+.comentarios {
+  margin: 4rem 2rem 5px 2rem;
+  padding: 2rem;
+  border-color: rgb(173, 93, 166);
+  border-style: dashed;
+  box-shadow: 0px 5px 20px rgb(0, 0, 0);
+}
+
 /*mayor a 1270px*/
 @media (min-width: 1270px) {
+  .imagen-juegos {
+    position: relative;
+    text-align: center;
+  }
+  .imagen-juegos img {
+    width: 100%;
+    height: 500px;
+  }
+  .imagen-juegos h2 {
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(213, 168, 207);
+    bottom: 5%;
+  }
+  .sionp {
+    position: relative;
+  }
+  .sionp .logoprinci {
+    width: 50%;
+    height: 500px;
+    position: relative;
+  }
+  .sionp .sion {
+    position: absolute;
+    color: rgb(245, 44, 9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+    font-weight: bold;
+    text-shadow: 10px 10px 0 rgb(129, 153, 238);
+    font-family: "Shalimar", cursive;
+  }
+  .titulo {
+    font-weight: bold;
+    font-size: 50px;
+    color: aliceblue;
+    opacity: 0.8;
+  }
+  .capital {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(244, 228, 8);
+  }
+  .selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    height: 80px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(134, 135, 136);
+  }
   .contenedor {
-    background-image: linear-gradient(to bottom, rgb(244, 236, 236), rgb(193, 193, 232));
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     grid-template-rows: auto;
   }
   .cine {
-    background-color: rgb(137, 87, 230);
+    background-color: rgb(99, 86, 86);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -133,14 +272,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
+  }
+  .cine:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .cine .cinei a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
   .food {
-    background-color: rgb(235, 146, 174);
+    background-color: rgb(151, 183, 210);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -148,14 +295,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
+  }
+  .food:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .food .foodi a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
   .entre {
-    background-color: rgb(131, 184, 114);
+    background-color: rgb(100, 137, 88);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -163,14 +318,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
+  }
+  .entre:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .entre .entrei a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
   .cont {
-    background-color: rgb(248, 145, 248);
+    background-color: rgb(114, 56, 114);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -179,23 +342,90 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
   }
+  .cont:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
+  }
   .cont .conti a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
 }
 /*entre 1270px y 670px*/
 @media (max-width: 1270px) and (min-width: 670px) {
+  .imagen-juegos {
+    position: relative;
+    text-align: center;
+  }
+  .imagen-juegos img {
+    width: 100%;
+    height: 350px;
+  }
+  .imagen-juegos h2 {
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(213, 168, 207);
+    bottom: 5%;
+  }
+  .sionp {
+    position: relative;
+  }
+  .sionp .logoprinci {
+    width: 40%;
+    height: 400px;
+    position: relative;
+  }
+  .sionp .sion {
+    position: absolute;
+    color: rgb(245, 44, 9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    font-weight: bold;
+    text-shadow: 8px 8px 0 rgb(129, 153, 238);
+    font-family: "Shalimar", cursive;
+  }
+  .titulo {
+    font-weight: bold;
+    font-size: 40px;
+    color: aliceblue;
+    opacity: 0.8;
+  }
+  .capital {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(244, 228, 8);
+  }
+  .selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    height: 80px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(134, 135, 136);
+  }
   .contenedor {
-    background-image: linear-gradient(to bottom, rgb(244, 236, 236), rgb(193, 193, 232));
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-template-rows: auto;
   }
   .cine {
-    background-color: rgb(137, 87, 230);
+    background-color: rgb(99, 86, 86);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -203,14 +433,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
+  }
+  .cine:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .cine .cinei a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
   .food {
-    background-color: rgb(235, 146, 174);
+    background-color: rgb(151, 183, 210);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -218,14 +456,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
+  }
+  .food:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .food .foodi a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
   .entre {
-    background-color: rgb(131, 184, 114);
+    background-color: rgb(100, 137, 88);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -233,14 +479,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
+  }
+  .entre:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .entre .entrei a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
   .cont {
-    background-color: rgb(248, 145, 248);
+    background-color: rgb(114, 56, 114);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.3rem;
     border: solid 0.12rem black;
     width: 18rem;
@@ -249,23 +503,119 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.6rem;
   }
+  .cont:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
+  }
   .cont .conti a img {
     width: 12rem;
-    height: auto;
+    height: 150px;
     border: solid 0.12rem black;
   }
 }
 /*menor a 670px*/
 @media (max-width: 670px) and (min-width: 150px) {
+  .imagen-juegos {
+    position: relative;
+    text-align: center;
+  }
+  .imagen-juegos img {
+    width: 100%;
+    height: 250px;
+  }
+  .imagen-juegos h2 {
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(213, 168, 207);
+    bottom: 5%;
+  }
+  .sionp {
+    position: relative;
+  }
+  .sionp .logoprinci {
+    width: 25%;
+    height: 150px;
+    position: relative;
+  }
+  .sionp .sion {
+    position: absolute;
+    color: rgb(245, 44, 9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 5px 5px 0 rgb(129, 153, 238);
+    font-family: "Shalimar", cursive;
+  }
+  .titulo {
+    font-weight: bold;
+    font-size: 25px;
+    color: aliceblue;
+    opacity: 0.8;
+  }
+  .capital {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(244, 228, 8);
+  }
+  .foot .red {
+    justify-self: left;
+    grid-area: rede;
+  }
+  .foot .footerbox {
+    justify-self: left;
+    grid-area: footerbox;
+  }
+  .foot {
+    display: grid;
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    background-image: radial-gradient(rgb(169, 207, 216), rgb(149, 137, 137));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "copi copi copi" "pais pais pais" "privacidad cook leg" "rede rede footerbox" "volver volver volver";
+  }
+  .footerbox .redes img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .footerboxc .redesc img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .footerboxf .redesf img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .selection {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-rows: auto;
+    height: 80px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(134, 135, 136);
+  }
   .contenedor {
-    background-image: linear-gradient(to bottom, rgb(244, 236, 236), rgb(193, 193, 232));
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-template-rows: auto;
   }
   .cine {
-    background-color: rgb(137, 87, 230);
+    background-color: rgb(99, 86, 86);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.15rem;
     border: solid 0.06rem black;
     width: 9rem;
@@ -273,14 +623,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.3rem;
+  }
+  .cine:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .cine .cinei a img {
     width: 6rem;
-    height: auto;
+    height: 75px;
     border: solid 0.06rem black;
   }
   .food {
-    background-color: rgb(235, 146, 174);
+    background-color: rgb(151, 183, 210);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.15rem;
     border: solid 0.06rem black;
     width: 9rem;
@@ -288,14 +646,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.3rem;
+  }
+  .food:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .food .foodi a img {
     width: 6rem;
-    height: auto;
+    height: 75px;
     border: solid 0.06rem black;
   }
   .entre {
-    background-color: rgb(131, 184, 114);
+    background-color: rgb(100, 137, 88);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.15rem;
     border: solid 0.06rem black;
     width: 9rem;
@@ -303,14 +669,22 @@
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.3rem;
+  }
+  .entre:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
   }
   .entre .entrei a img {
     width: 6rem;
-    height: auto;
+    height: 75px;
     border: solid 0.06rem black;
   }
   .cont {
-    background-color: rgb(248, 145, 248);
+    background-color: rgb(114, 56, 114);
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    transition: all 0.4s ease;
+    opacity: 0.8;
+    border-radius: 10%;
     padding: 0.15rem;
     border: solid 0.06rem black;
     width: 9rem;
@@ -319,28 +693,32 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0.3rem;
   }
+  .cont:hover {
+    box-shadow: 5px 10px 30px rgb(0, 0, 0);
+    transform: translateY(-4%);
+  }
   .cont .conti a img {
     width: 6rem;
-    height: auto;
+    height: 75px;
     border: solid 0.06rem black;
   }
 }
 @media (min-width: 625px) {
   .imagen-resto img {
-    width: 30rem;
+    width: 60rem;
     height: auto;
   }
   .menues {
     display: grid;
-    grid-template-rows: 1fr 800px 1fr 800px;
+    grid-template-rows: 1fr 500px 1fr 500px;
   }
   .menu-sub-a {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    background-image: linear-gradient(to left, rgb(176, 249, 161), rgb(126, 130, 128));
+    background-image: linear-gradient(to bottom, rgb(201, 227, 250), aqua);
   }
 }
 @media (max-width: 625px) {
@@ -350,15 +728,15 @@
   }
   .menues {
     display: grid;
-    grid-template-rows: 1fr 1600px 1fr 1600px;
+    grid-template-rows: 1fr 900px 1fr 900px;
   }
   .menu-sub-a {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    background-image: linear-gradient(to left, rgb(176, 249, 161), rgb(126, 130, 128));
+    background-image: linear-gradient(to bottom, rgb(201, 227, 250), aqua);
   }
 }
 /*css resto y mas*/
@@ -369,10 +747,20 @@
 .imagen-resto h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 60px;
+  color: rgb(149, 11, 130);
 }
-.imagen-resto h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+.imagen-resto img {
+  width: 98%;
+  height: 550px;
+}
+
+.up3 .collapse ul li a {
+  text-decoration: none;
+  color: rgb(119, 9, 119);
+  font-weight: bold;
+}
+.up3 .collapse ul li a:hover {
+  color: rgb(136, 153, 5);
 }
 
 .restocomida {
@@ -380,10 +768,19 @@
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  height: 300px;
+  height: 250px;
   background-image: linear-gradient(to bottom, rgb(201, 227, 250), aqua);
 }
 
+.menugral h3 {
+  display: inline;
+  color: rgb(149, 11, 130);
+}
+.menugral img {
+  display: inline;
+  justify-self: center;
+  height: 80px;
+}
 .menugral a {
   text-decoration: none;
 }
@@ -407,55 +804,213 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   text-decoration: none;
+  color: rgb(180, 180, 10);
+}
+
+#menu-aoc {
+  background-color: rgb(201, 227, 250);
+}
+
+#menu-cb {
+  background-color: rgb(201, 227, 250);
 }
 
 /*animacion*/
 .muestra {
-  transition: all 0.5s;
+  position: relative;
+}
+.muestra h6 {
+  text-align: center;
+}
+.muestra img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8%;
 }
 .muestra .detallemenu {
-  transition: all 0.5s;
-  display: none;
-}
-.muestra:hover {
-  height: 350px;
-  width: 500px;
-  padding: 20px;
-  background-color: rgb(222, 238, 238);
+  transition: all 0.4s;
+  width: 0%;
+  height: 90%;
+  background-color: rgb(11, 11, 11);
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(2, 24, 33);
 }
 .muestra:hover .detallemenu {
-  display: block;
+  width: 100%;
+  height: 90%;
+  border-radius: 8%;
+  opacity: 0.7;
+  color: white;
+  font-weight: bold;
 }
 
-.row {
+.copyf {
+  justify-self: 20%;
+  grid-area: copif;
+}
+
+.paisf {
+  grid-area: paisf;
+}
+
+.privacidadf {
+  grid-area: privacidadf;
+}
+
+.cookiesf {
+  grid-area: cookf;
+}
+
+.legalesf {
+  grid-area: legf;
+}
+
+.redf {
+  justify-self: right;
+  grid-area: redef;
+}
+
+.footerboxf {
+  justify-self: center;
+  grid-area: footerboxf;
+}
+
+.volverf {
+  justify-self: left;
+  grid-area: volverf;
+}
+
+.footf {
+  display: grid;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(119, 9, 119);
+  border-style: inset;
+  border-top-width: 10px;
+  background-color: rgb(201, 227, 250);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "copif copif copif copif copif" "paisf paisf privacidadf cookf legf" "volverf volverf redef redef footerboxf";
+}
+
+@media (max-width: 670px) and (min-width: 150px) {
+  .imagen-resto {
+    text-align: center;
+    background-color: rgb(201, 227, 250);
+  }
+  .imagen-resto h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: rgb(149, 11, 130);
+  }
+  .imagen-resto img {
+    width: 98%;
+    height: 350px;
+  }
+  .menugral h3 {
+    display: inline;
+    color: rgb(149, 11, 130);
+    font-size: 15px;
+  }
+  .menugral img {
+    display: inline;
+    justify-self: center;
+    height: 50px;
+  }
+  .menugral a {
+    text-decoration: none;
+  }
+  .footf .redf {
+    justify-self: left;
+    grid-area: redef;
+  }
+  .footf .footerboxf {
+    justify-self: left;
+    grid-area: footerboxf;
+  }
+  .footf {
+    display: grid;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(119, 9, 119);
+    border-style: inset;
+    border-top-width: 10px;
+    background-color: rgb(201, 227, 250);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "copif copif copif" "paisf paisf paisf" "privacidadf cookf legf" "redef redef footerboxf" "volverf volverf volverf";
+  }
+}
+.redesf img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.volverf a {
+  color: rgb(119, 9, 119);
+  text-decoration: none;
+}
+.volverf a:hover {
+  color: red;
+}
+
+#game .row {
   height: 350px;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 0.5rem 1rem 1rem 2rem;
+  margin-top: 5px;
+  margin-bottom: 2rem;
   background-image: linear-gradient(to left, rgb(216, 216, 231), rgb(40, 40, 237));
 }
 
-.col {
+#game .row .col {
   border: solid 2px;
-  padding: 30px;
+  padding: 5px;
 }
 
+.patio {
+  background-color: rgb(118, 227, 184);
+}
+
+.reserva a {
+  text-decoration: none;
+}
 .reserva h1 {
-  color: blue;
+  color: rgb(133, 11, 52);
   font-family: cursive;
   font-weight: bold;
   font-size: 3rem;
+  padding-bottom: 20px;
+  text-shadow: 5px 5px 0 rgb(215, 236, 184);
+}
+.reserva h1:hover {
+  transform: translateY(-8%);
 }
 
-.selection {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  grid-template-rows: auto;
-  height: 80px;
-  width: auto;
-  margin-top: 10px;
-  padding: 20px;
-  background-color: rgb(134, 135, 136);
+.up4 .collapse ul li a {
+  text-decoration: none;
+  color: rgb(241, 245, 185);
+  font-weight: bold;
+}
+.up4 .collapse ul li a:hover {
+  color: rgb(47, 5, 153);
+}
+
+#entertainment {
+  background-color: rgb(73, 121, 102);
+  color: rgb(241, 245, 185);
+}
+
+.inienter {
+  color: rgb(241, 245, 185);
+}
+
+.imgjuegos {
+  width: 90%;
+  height: 200px;
 }
 
 .seleccion option {
@@ -463,5 +1018,242 @@
 }
 
 .seleccion form {
-  border-radius: 2rem;
+  border-radius: 20%;
+}
+
+.d-block {
+  width: 90%;
+  height: 600px;
+  position: relative;
+}
+
+.up2 .collapse ul li a {
+  text-decoration: none;
+  color: wheat;
+  font-weight: bold;
+}
+.up2 .collapse ul li a:hover {
+  color: white;
+}
+
+.proximos {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.play {
+  position: absolute;
+  top: 90%;
+  right: 15%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.pelitit {
+  display: inline-block;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: white;
+  padding-left: 7%;
+  padding-bottom: 10px;
+  padding-top: 70px;
+  background-color: rgb(39, 37, 37);
+}
+
+.proyeccion {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(39, 37, 37);
+}
+
+.peli {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+}
+.peli img {
+  border-radius: 5%;
+  width: 100%;
+  height: 300px;
+  transition: all 500ms ease-out;
+  cursor: pointer;
+}
+.peli h5 {
+  color: wheat;
+  text-align: center;
+}
+.peli .resumen {
+  position: absolute;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 91%;
+  background: rgba(237, 241, 241, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  border-radius: 5%;
+}
+.peli .resumen p {
+  padding-top: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.peli:hover .resumen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.estrenostit {
+  display: inline-block;
+  width: 100%;
+  padding-top: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: white;
+  padding-left: 7%;
+  padding-top: 100px;
+  background-color: rgb(66, 59, 59);
+}
+
+.estrenos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(66, 59, 59);
+}
+
+.estrenopeli {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+}
+.estrenopeli img {
+  border-radius: 5%;
+  width: 100%;
+  height: 300px;
+  transition: all 500ms ease-out;
+  cursor: pointer;
+}
+.estrenopeli h5 {
+  color: wheat;
+  text-align: center;
+}
+.estrenopeli .resumen2 {
+  position: absolute;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 91%;
+  background: rgba(237, 241, 241, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  border-radius: 5%;
+}
+.estrenopeli .resumen2 p {
+  padding-top: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.estrenopeli:hover .resumen2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.copyc {
+  justify-self: 20%;
+  grid-area: copic;
+}
+
+.paisc {
+  grid-area: paisc;
+}
+
+.privacidadc {
+  grid-area: privacidadc;
+}
+
+.cookiesc {
+  grid-area: cookc;
+}
+
+.legalesc {
+  grid-area: legc;
+}
+
+.redc {
+  justify-self: right;
+  grid-area: redec;
+}
+
+.footerboxc {
+  justify-self: center;
+  grid-area: footerboxc;
+}
+
+.volverc {
+  justify-self: left;
+  grid-area: volverc;
+}
+
+.footc {
+  display: grid;
+  padding: 20px;
+  font-weight: bold;
+  color: wheat;
+  border-style: inset;
+  border-top-width: 10px;
+  background-color: rgb(66, 59, 59);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "copic copic copic copic copic" "paisc paisc privacidadc cookc legc" "volverc volverc redec redec footerboxc";
+}
+
+@media (max-width: 670px) and (min-width: 150px) {
+  .footc .redc {
+    justify-self: left;
+    grid-area: redec;
+  }
+  .footc .footerboxc {
+    justify-self: left;
+    grid-area: footerboxc;
+  }
+  .footc {
+    display: grid;
+    padding: 20px;
+    font-weight: bold;
+    color: wheat;
+    border-style: inset;
+    border-top-width: 10px;
+    background-color: rgb(66, 59, 59);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "copic copic copic" "paisc paisc paisc" "privacidadc cookc legc" "redec redec footerboxc" "volverc volverc volverc";
+  }
+}
+.redesc img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.volverc a {
+  color: wheat;
+  text-decoration: none;
+}
+.volverc a:hover {
+  color: red;
 }/*# sourceMappingURL=sionsass.css.map */
