@@ -2,6 +2,23 @@
 /*mayor a 1270px*/
 
 @media (min-width: 1270px) {
+    .menu-sub {
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2rem;
+        padding-top: 50px;
+        padding-left: 1rem;
+        text-decoration: overline;
+        
+    }
+    .ini {
+        text-align: right;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgb(180, 180, 10); 
+       
+    }
     .imagen-juegos {
         position: relative;
         text-align: center;
@@ -190,10 +207,35 @@
             }
         }
     }
+    .restocomida {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        height: 350px;
+        background-image: linear-gradient(to bottom,rgb(201, 227, 250), aqua );
+    }     
 }
 /*entre 1270px y 670px*/
 
-@media (max-width: 1270px) and (min-width: 670px) {
+@media (max-width: 1270px) and (min-width: 870px) {
+    .menu-sub {
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5rem;
+        padding-top: 50px;
+        padding-left: 1rem;
+        text-decoration: overline;
+        
+    }
+    .ini {
+        text-align: right;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: .7rem;
+        text-decoration: none;
+        color: rgb(180, 180, 10); 
+       
+    }
     .imagen-juegos {
         position: relative;
         text-align: center;
@@ -217,7 +259,8 @@
         .logoprinci {
             width: 40%;
             height: 400px;
-            position: relative;    
+            position: relative;
+             
         }
         .sion {
             position: absolute;
@@ -379,10 +422,18 @@
             }
         }
     }
+    .restocomida {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        height: 250px;
+        background-image: linear-gradient(to bottom,rgb(201, 227, 250), aqua );
+    }     
 }
 /*menor a 670px*/
 
-@media (max-width: 670px) and (min-width: 150px) {
+@media (max-width: 870px) and (min-width: 150px) {
     .imagen-juegos {
         position: relative;
         text-align: center;
@@ -406,7 +457,8 @@
         .logoprinci {
             width: 25%;
             height: 150px;
-            position: relative;    
+            position: relative; 
+            opacity: 0;   
         }
         .sion {
             position: absolute;
@@ -607,7 +659,18 @@
                 }
             }
         }
-    }       
+    } 
+    .texto-tarjeta p {
+        display: none;
+    }
+    .restocomida {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        height: 150px;
+        background-image: linear-gradient(to bottom,rgb(201, 227, 250), aqua );
+    }     
 }
 
 @media (min-width: 625px) {
