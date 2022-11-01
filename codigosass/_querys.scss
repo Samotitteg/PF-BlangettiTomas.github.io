@@ -231,7 +231,7 @@
     .ini {
         text-align: right;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: .7rem;
+        font-size: .9rem;
         text-decoration: none;
         color: rgb(180, 180, 10); 
        
@@ -434,6 +434,23 @@
 /*menor a 670px*/
 
 @media (max-width: 870px) and (min-width: 150px) {
+    .menu-sub {
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5rem;
+        padding-top: 50px;
+        padding-left: .9rem;
+        text-decoration: overline;
+        
+    }
+    .ini {
+        text-align: right;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: .8rem;
+        text-decoration: none;
+        color: rgb(180, 180, 10); 
+       
+    }
     .imagen-juegos {
         position: relative;
         text-align: center;
